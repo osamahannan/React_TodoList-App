@@ -1,10 +1,11 @@
-
+import Form from './Components/Form';
 
 
 function App() {
   return (
     <>
-      <h1>hello carnage</h1>
+      <header className = "title">My Todo list</header>
+      <Form />
     </>
   );
 }
