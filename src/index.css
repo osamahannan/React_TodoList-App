@@ -17,13 +17,12 @@ body {
 }
 form {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     min-height: 20vh;
     border: 2px solid black;
 }
-form input {
+form input, form button {
     padding: 0.5rem;
     font-size: 1.5rem;
     border: none;
@@ -34,22 +33,28 @@ form input {
     display: flex;
     width: 300px;
     height: 5vh;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
 }
 .todo-btn {
-    position: absolute;
-    background-color: #ff6f47;
-    border: none;
-    left: 89.5%;
-    top: 5.8%;
-    padding: 4px 5px 4px 5px;
-    border-radius: 3px;
+    height: 5vh;
+    margin: 5px 5px 5px 0;
+    padding: 2px 5px 5px 5px;
+    background: #f7fffe;
+    cursor: pointer;
 }
-.plus-icon {
-    font-size: 1.1rem;
-    color: white;
-}
+
 .todo-btn:hover {
     background: #ff6f47;
+    transition: all 0.3s ease;
+}
+.plus-icon {
+    background-color: #ff6f47;
     color: white;
-  }
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 3px;
+}
+.plus-icon:hover {
+    background-color: white;
+    color: #ff6f47;
+}
