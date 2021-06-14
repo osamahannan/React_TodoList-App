@@ -5,8 +5,6 @@
 }
 body {
     background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    display: flex;
-    justify-content: center;
 }
 .title {
     display: flex;
@@ -23,8 +21,8 @@ form {
     border: 2px solid black;
 }
 form input, form button {
-    padding: 0.5rem;
-    font-size: 1.5rem;
+    padding: 10px;
+    font-size: 25px;
     border: none;
     background-color: white;
 }
@@ -32,13 +30,13 @@ form input, form button {
 .enter-todo {
     display: flex;
     width: 300px;
-    height: 5vh;
-    margin: 5px 0 5px 5px;
+    height: 36px;
+    margin: 5px 5px 5px 5px;
 }
 .todo-btn {
-    height: 5vh;
-    margin: 5px 5px 5px 0;
-    padding: 2px 5px 5px 5px;
+    height: 36px;
+    margin: 5px 5px 5px -5px;
+    padding: 1px 5px 5px 5px;
     background: #f7fffe;
     cursor: pointer;
 }
@@ -50,11 +48,29 @@ form input, form button {
 .plus-icon {
     background-color: #ff6f47;
     color: white;
-    font-size: 1rem;
+    font-size: 17px;
     padding: 3px;
     border-radius: 3px;
 }
 .plus-icon:hover {
     background-color: white;
     color: #ff6f47;
+}
+.filter-todo {
+    padding: 5px;
+    height: 36px;
+    margin: 5px;
+    border: none;
+    font-size: 15px;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.todo-list {
+    min-width: 30%;
+    border: 1px solid black;
+    list-style: none;
 }
