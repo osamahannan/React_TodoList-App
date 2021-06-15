@@ -18,7 +18,6 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     min-height: 20vh;
-    border: 2px solid black;
 }
 form input, form button {
     padding: 10px;
@@ -67,10 +66,35 @@ form input, form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
-.todo-list {
-    min-width: 30%;
-    border: 1px solid black;
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.todo-item{
+    display: flex;
+    background: white;
+    min-width: 30vh;
     list-style: none;
+    padding:0.3rem;
+    flex-wrap: wrap;
+}
+.todo li {
+    flex: 1;
+}
+.complete-btn, .trash-btn {
+    border: none;
+    height: 36px;
+    margin: 5px 5px 5px -5px;
+    padding: 0.6rem;
+    cursor: pointer;
+    color: white;
+}
+.complete-btn {
+    background: rgb(11, 212, 162);
+}
+.trash-btn {
+    background: #ff6f47;
 }
