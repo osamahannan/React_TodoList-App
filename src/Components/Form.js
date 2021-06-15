@@ -1,23 +1,21 @@
-import React, {useState} from 'react';
-const Form = () => {
+import React from 'react';
 
-    const [inputText, setInputText] = useState("");  
-    const [todos, settodos] = useState([]);
+const Form = ({setInputText, todos, setTodos, inputText}) => {
 
-    const inputTextHandler= (e) => {
-        console.log(e.target.value);
+    const inputTextHandler = (e) => {
         setInputText(e.target.value);
     };
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
         console.log("Hello Detective");
-        settodos([
+        setTodos([
             ...todos,
             {text : inputText, completed : false, id : Math.random() * 1000}
         ]);
         setInputText("");
     };
+    
     return (
         <form>
             <input onChange = {inputTextHandler} value={inputText} type="text" className="enter-todo"></input>
