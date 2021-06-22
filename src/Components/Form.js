@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({setInputText, todos, setTodos, inputText}) => {
+const Form = ({setInputText, todos, setTodos, inputText, setStatus, status, filter, setFilter}) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -8,13 +8,16 @@ const Form = ({setInputText, todos, setTodos, inputText}) => {
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
-        console.log("Hello Detective");
         setTodos([
             ...todos,
             {text : inputText, completed : false, id : Math.random() * 1000}
         ]);
         setInputText("");
     };
+
+    const statusHandle = (e) => {
+        setStatus(e.target.value);
+    }
     
     return (
         <form>
@@ -23,8 +26,8 @@ const Form = ({setInputText, todos, setTodos, inputText}) => {
                 <i className="fa fa-plus plus-icon"></i>
             </button>
             <div className="select">
-                <select name="todos" className="filter-todo">
-                    <option vlaue="all">All</option>
+                <select onChange = {statusHandle} name="todos" className="filter-todo">
+                    <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="pending">Pending</option>
                 </select>
