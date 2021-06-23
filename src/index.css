@@ -75,7 +75,6 @@ form input, form button {
 }
 .todo-item{
     display: flex;
-    justify-content: center;
     background: white;
     min-width: 30vh;
     list-style: none;
