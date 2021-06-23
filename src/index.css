@@ -75,12 +75,14 @@ form input, form button {
 }
 .todo-item{
     display: flex;
+    justify-content: center;
     background: white;
     min-width: 30vh;
     list-style: none;
     padding:0.3rem;
     padding-right: 1rem;
     padding-left: 0.7rem;
+    margin-left: 5px;
     flex-wrap: wrap;
 }
 .todo li {
