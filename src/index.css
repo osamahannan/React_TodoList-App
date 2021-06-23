@@ -79,6 +79,8 @@ form input, form button {
     min-width: 30vh;
     list-style: none;
     padding:0.3rem;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
     flex-wrap: wrap;
 }
 .todo li {
