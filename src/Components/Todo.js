@@ -8,9 +8,9 @@ const Todo = ({ text, todos, setTodos, todo }) => {
 
     const completeHandle = () => {
         setTodos(todos.map((item) => {
-            if(todo.id === item.id){
+            if (todo.id === item.id) {
                 return {
-                    ...item, completed : !item.completed
+                    ...item, completed: !item.completed
                 };
             }
 
@@ -22,13 +22,15 @@ const Todo = ({ text, todos, setTodos, todo }) => {
         <div className="todo">
             <li className={`todo-item ${todo.completed}`}>{text}</li>
 
-            <button  onClick={completeHandle} className="complete-btn">
-                <i className="fas fa-check "></i>
-            </button>
+            <div className="buttons">
+                <button onClick={completeHandle} className="complete-btn">
+                    <i className="fas fa-check "></i>
+                </button>
 
-            <button onClick = {deleteHandle} className="trash-btn">
-                <i className="fas fa-trash "></i>
-            </button>
+                <button onClick={deleteHandle} className="trash-btn">
+                    <i className="fas fa-trash "></i>
+                </button>
+            </div>
 
         </div>
     );

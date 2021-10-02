@@ -26,6 +26,11 @@ form input, form button {
     background-color: white;
 }
 
+form input {
+    outline: none;
+    font-size: 17px;
+}
+
 .enter-todo {
     display: flex;
     width: 300px;
@@ -73,16 +78,16 @@ form input, form button {
     align-items: center;
     font-size: 1.4rem;
 }
-.todo-item{
+
+.todo-item {
     display: flex;
     background: white;
     min-width: 30vh;
     list-style: none;
-    padding:0.3rem;
-    padding-right: 1rem;
-    padding-left: 0.7rem;
-    margin-left: 5px;
+    padding: 0.4rem 1rem 0.4rem 0.7rem;
+    margin: 5px 0 5px 5px;
     flex-wrap: wrap;
+    font-size: 1.2rem;
 }
 .todo li {
     flex: 1;
@@ -90,7 +95,7 @@ form input, form button {
 .complete-btn, .trash-btn {
     border: none;
     height: 36px;
-    margin: 5px 5px 5px -5px;
+    margin: 5px 5px 5px 5px;
     padding: 0.6rem;
     cursor: pointer;
     color: white;
@@ -100,6 +105,7 @@ form input, form button {
 }
 .trash-btn {
     background: #ff6f47;
+    margin: 5px 5px 5px 0;
 }
 
 .true {

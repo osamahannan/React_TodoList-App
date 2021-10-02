@@ -27,9 +27,9 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, status, filt
             </button>
             <div className="select">
                 <select onChange = {statusHandle} name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="pending">Pending</option>
+                    <option value="all" className= "filter-state">All</option>
+                    <option value="completed" className= "filter-state">Completed</option>
+                    <option value="pending" className= "filter-state">Pending</option>
                 </select>
             </div>
         </form>
